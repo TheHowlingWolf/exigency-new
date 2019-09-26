@@ -1,7 +1,8 @@
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
-const bodyParser =require('body-parser');
+const bodyParser = require('body-parser');
+
 
 const app=express();
 
@@ -20,8 +21,7 @@ app.set('view engine','ejs');
 app.use( express.static( "public" ) );
 
 //bodyparser
-app.use(express.urlencoded({ extended:false}));
-app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.urlencoded({ extended:false}));
 app.use(bodyParser.json());
 
 //Handling Routes

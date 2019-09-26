@@ -19,8 +19,7 @@ router.get('/register',(req,res)=>{
 
 //Register Post Request
 router.post('/register',(req,res)=>{
-    console.log(req.body);
-    res.send('Hello');
+    console.log(JSON.stringify(req.body));
 });
 
 

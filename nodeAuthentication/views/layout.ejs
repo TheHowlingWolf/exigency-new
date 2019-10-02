@@ -20,6 +20,7 @@
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: #222326 !important;
   color: rgb(222,213,28) !important;
+  overflow-x: hidden;
 }
 
 .navbar{
@@ -41,7 +42,7 @@
   position: relative;
 }
 #hero-area .primary-overlay{
-  background: rgba(255, 50, 50, 0.7);
+  background: rgba(255,213,28, 0.6);
   position: absolute;
   top: 0;
   left:0;
@@ -90,64 +91,9 @@
 }
 </style>
 <body>
-    <section id="Navbar">
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3">
-                <div class ="container">
-                  <a href="index.html" class="navbar-brand">Exigency Network</a>
-                  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon">
-                    </span>
-                  </button>
-          
-                  <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ml-auto">
-                      <li class="nav-item">
-                        <a href="/" class="nav-link">Home</a>
-                      </li>
-                      <li class="navbar-item">
-                        <a href="/about-us" class="nav-link">Explore Us</a>
-                      </li>
-                      <li class="navbar-item">
-                        <a href="#analysis-head-section" class="nav-link">Analysis</a>
-                      </li>
-                      <li class="navbar-item">
-                        <a href="/users/login" class="nav-link">Log In</a>
-                      </li>
-                      <li class="navbar-item">
-                            <a href="/users/Register" class="nav-link">Register</a>
-                        </li>
-                    </ul>
-                  </div>
-                </div>
-        </nav>
-    </section>
-    <section id="hero-area" class="py-3">
-        <div class="primary-overlay text-white">
-            <div class="container">
-                    <div id="hero-banner" class="row w-100 align-item-center">
-                        <div class="col">
-                                <div class="text-center align-self-center align-center">
-                                        <img src="/images/hero-area-banner-icon.png" alt="" class="img-fluid">
-                                </div>
-                                <div class="text-center align-self-center align-center">
-                                        <h1>Welcome To Exigency Network</h1>
-                                        <p class="lead">A safe insurance to your comforting drives</p>
-                                </div>
-                        </div> 
-                    </div>
-            </div>
-        </div>
-    </section>
-
     <%- body %> 
     <section id="footer" class="pt-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                            <p style="margin-bottom: 0px;">This site is maintained my <a class="exigency-link" href='#' style="text-decoration: none;">Exigency Specialists</a></p>
-                    </div>
-                </div>
-            </div>
+        <% include ./partials/footer %>   
     </section>
 
 </body>
